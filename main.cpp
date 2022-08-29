@@ -4,11 +4,11 @@ using namespace std;
 int main(){
     print_hello();
     cout<< endl;
-    int x; cin >> x;
-    while(x < 0) {
+    int y; cin >> y;
+    while(y < 0) {
         printf("You have entered a negative number, please enter a positive number\n");
-	cin >> x;
+	cin >> y;
     }
-    cout << "Factorial of " << x << " is " << factorial(x) << "\n";
+    cout << "Factorial of " << y << " is " << factorial(y) << "\n";
     return 0;
 }
