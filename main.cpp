@@ -3,8 +3,8 @@
 using namespace std;
 int main(){
     print_hello();
-    printf("\n");
+    cout << "\n";
     int x; cin >> x;
-    printf("The factorial of 5 is %d", factorial(x));
+    cout << "The factorial of 5 is " << factorial(x)) << endl;
     return 0;
 }
