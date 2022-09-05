@@ -1,8 +1,11 @@
-obj = factorial.o hello.o
+obj = main.cpp factorial.o hello.o
 
-main : main.cpp $(obj)
-	g++ -o main main.cpp $(obj)
+main : $(obj)
+	g++ -o main $(obj)
 
-factorial.o : factorial.cpp functions.h
+factorial.o : functions.h factorial.cpp
 
-hello.o : hello.cpp functions.h
+hello.o : functions.h hello.cpp
+
+clean :
+	rm *.o main
