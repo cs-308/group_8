@@ -15,4 +15,5 @@ int gcd(int a, int b)
             return res;
         res--;
     }
+    return res;
 }
