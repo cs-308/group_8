@@ -2,9 +2,10 @@
 #include "functions.h"
 using namespace std;
 int main(){
-    print_hello();
-    cout << "\n";
-    int x; cin >> x;
-    cout << "The factorial of 5 is " << factorial(x) << endl;
+    
+    int x=56,y=98;
+    cout<<"gcd of x and y is "<<gcd(x,y)<<endl;
+    cout<<"gcd of x and y is "<<recursive_gcd(x,y)<<endl;
+
     return 0;
 }
